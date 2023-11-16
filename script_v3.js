@@ -6,7 +6,7 @@
 //$(".nav-search-close").on("click", function () {
 //$("#boost-pfs-search-box-0").val("");
 //});
-//show work in progress
+//show work injlk progress
 $(".hide-work-in-progress-2").css("display", "flex");
 //run line clamping script
 
@@ -61,7 +61,7 @@ function moveLine(myLine) {
 
   $(".nav_underline").css({
     width: myWidth + "px",
-    transform: "translateX(" + myDistance + "px"
+    transform: "translateX(" + myDistance + "px",
   });
 }
 
@@ -101,7 +101,7 @@ $(".grid-item.is--social").hover(
   },
   function () {
     $(this).removeClass("show");
-  }
+  },
 );
 
 $(".menu_link.social").mouseleave(function () {
@@ -146,7 +146,7 @@ $(".menu-background-overlay").on("click", function () {
 //hamburger menu
 $(".hamburger-menu.is--divs").on("click", function () {
   $(".ham-line.top, .ham-line.bottom, .ham-line.middle").toggleClass(
-    "is--close"
+    "is--close",
   );
 });
 
@@ -157,7 +157,7 @@ $(".hamburger-menu").on("click", function () {
 $(".close-wrapper").on("click", function () {
   $(".grid-item.is--nav-links").removeClass("show");
   $(".ham-line.top, .ham-line.bottom, .ham-line.middle").toggleClass(
-    "is--close"
+    "is--close",
   );
 });
 
@@ -169,14 +169,14 @@ var mySwiper = new Swiper(".swiper-1-col", {
   pagination: {
     el: ".pagination-1-col",
     dynamicBullets: true,
-    clickable: true
+    clickable: true,
   },
   loop: false,
 
   grabCursor: false,
   a11y: false,
   spaceBetween: 30,
-  allowTouchMove: true
+  allowTouchMove: true,
 });
 
 // swiper JS - Hero Homepage 1 Column Initialize //
@@ -185,11 +185,11 @@ var mySwiper = new Swiper(".swiper-hero", {
   loop: true,
   autoplay: {
     delay: 1500,
-    disableOnInteraction: false
+    disableOnInteraction: false,
   },
   fadeEffect: {
-    crossFade: true
-  }
+    crossFade: true,
+  },
 });
 
 //Thumbnail Swiper
@@ -201,7 +201,7 @@ var galleryThumbs = new Swiper("#thumb-swiper", {
   centeredSlides: false,
   grabCursor: true,
   allowTouchMove: false,
-  a11y: false
+  a11y: false,
 });
 var galleryTop = new Swiper("#gallery-swiper", {
   spaceBetween: 0,
@@ -210,11 +210,11 @@ var galleryTop = new Swiper("#gallery-swiper", {
     el: ".pagination-1-col",
     dynamicBullets: true,
 
-    clickable: true
+    clickable: true,
   },
   /* This piece of code connects main slider with thumbnail slider*/
   thumbs: {
-    swiper: galleryThumbs
+    swiper: galleryThumbs,
   },
   a11y: false,
   loop: false,
@@ -226,7 +226,7 @@ var galleryTop = new Swiper("#gallery-swiper", {
       slidesPerGroup: 1,
       centeredSlides: true,
       centeredSlidesBounds: true,
-      spaceBetween: 10
+      spaceBetween: 10,
     },
     480: {
       /* when window >=0px - webflow mobile landscape/portriat */
@@ -234,14 +234,14 @@ var galleryTop = new Swiper("#gallery-swiper", {
       slidesPerGroup: 1,
       centeredSlides: true,
       centeredSlidesBounds: true,
-      spaceBetween: 10
+      spaceBetween: 10,
     },
     767: {
       /* when window >= 767px - webflow tablet */ slidesPerView: 1,
       slidesPerGroup: 1,
-      spaceBetween: 10
-    }
-  }
+      spaceBetween: 10,
+    },
+  },
 });
 
 // swiper JS Initialize //
@@ -251,7 +251,7 @@ var mySwiper = new Swiper(".swiper-cat", {
   pagination: {
     el: ".pagination-cat",
     dynamicBullets: true,
-    clickable: true
+    clickable: true,
   },
 
   slidesPerGroup: 5,
@@ -261,7 +261,7 @@ var mySwiper = new Swiper(".swiper-cat", {
   allowTouchMove: true,
   navigation: {
     nextEl: "#right-button",
-    prevEl: "#left-button"
+    prevEl: "#left-button",
   },
   breakpoints: {
     0: {
@@ -271,12 +271,12 @@ var mySwiper = new Swiper(".swiper-cat", {
       slidesPerView: 2,
       slidesPerGroup: 1,
       pagination: {
-        enabled: false
+        enabled: false,
       },
 
       centeredSlides: true,
       loop: true,
-      speed: 400
+      speed: 400,
     },
     480: {
       /* when window >=0px - webflow mobile landscape/portriat */
@@ -293,21 +293,21 @@ var mySwiper = new Swiper(".swiper-cat", {
         stretch: 0,
         depth: 200,
         modifier: 0.75,
-        slideShadows: true
-      }
+        slideShadows: true,
+      },
     },
     767: {
       /* when window >= 767px - webflow tablet */ slidesPerView: 3,
       slidesPerGroup: 3,
-      spaceBetween: 28
+      spaceBetween: 28,
     },
     992: {
       /* when window >= 988px - webflow desktop */ slidesPerView: 5,
       slidesPerGroup: 5,
       spaceBetween: 20,
-      loop: false
-    }
-  }
+      loop: false,
+    },
+  },
 });
 
 // swiper JS Initialize //
@@ -317,7 +317,7 @@ var mySwiper = new Swiper(".swiper1", {
   pagination: {
     el: ".pagination1",
     dynamicBullets: true,
-    clickable: true
+    clickable: true,
   },
 
   slidesPerGroup: 1,
@@ -327,7 +327,7 @@ var mySwiper = new Swiper(".swiper1", {
   allowTouchMove: true,
   navigation: {
     nextEl: "#right-button",
-    prevEl: "#left-button"
+    prevEl: "#left-button",
   },
   breakpoints: {
     0: {
@@ -337,27 +337,27 @@ var mySwiper = new Swiper(".swiper1", {
       centeredSlides: true,
       centeredSlidesBounds: true,
       spaceBetween: 20,
-      loop: false
+      loop: false,
     },
     480: {
       /* when window >=0px - webflow mobile landscape/portriat */
       slidesPerView: 2,
       slidesPerGroup: 2,
       spaceBetween: 20,
-      loop: false
+      loop: false,
     },
     767: {
       /* when window >= 767px - webflow tablet */ slidesPerView: 3,
       slidesPerGroup: 1,
-      spaceBetween: 28
+      spaceBetween: 28,
     },
     992: {
       /* when window >= 988px - webflow desktop */ slidesPerView: 3,
       slidesPerGroup: 3,
       spaceBetween: 20,
-      loop: false
-    }
-  }
+      loop: false,
+    },
+  },
 });
 
 // swiper JS Initialize //
@@ -367,7 +367,7 @@ var mySwiper = new Swiper(".swiper2", {
   pagination: {
     el: ".pagination2",
     dynamicBullets: true,
-    clickable: true
+    clickable: true,
   },
 
   slidesPerGroup: 3,
@@ -377,7 +377,7 @@ var mySwiper = new Swiper(".swiper2", {
   allowTouchMove: true,
   navigation: {
     nextEl: "#right-button",
-    prevEl: "#left-button"
+    prevEl: "#left-button",
   },
   breakpoints: {
     0: {
@@ -387,27 +387,27 @@ var mySwiper = new Swiper(".swiper2", {
       centeredSlides: true,
       centeredSlidesBounds: true,
       spaceBetween: 20,
-      loop: false
+      loop: false,
     },
     480: {
       /* when window >=0px - webflow mobile landscape/portriat */
       slidesPerView: 1,
       slidesPerGroup: 1,
       spaceBetween: 20,
-      loop: false
+      loop: false,
     },
     767: {
       /* when window >= 767px - webflow tablet */ slidesPerView: 3,
       slidesPerGroup: 1,
-      spaceBetween: 28
+      spaceBetween: 28,
     },
     992: {
       /* when window >= 988px - webflow desktop */ slidesPerView: 4,
       slidesPerGroup: 4,
       spaceBetween: 20,
-      loop: false
-    }
-  }
+      loop: false,
+    },
+  },
 });
 
 // swiper JS Initialize //
@@ -417,7 +417,7 @@ var mySwiper = new Swiper(".swiper-boom", {
   pagination: {
     el: ".pagination-boom",
     dynamicBullets: true,
-    clickable: true
+    clickable: true,
   },
 
   slidesPerGroup: 3,
@@ -427,7 +427,7 @@ var mySwiper = new Swiper(".swiper-boom", {
   allowTouchMove: true,
   navigation: {
     nextEl: "#right-button",
-    prevEl: "#left-button"
+    prevEl: "#left-button",
   },
   breakpoints: {
     0: {
@@ -441,8 +441,8 @@ var mySwiper = new Swiper(".swiper-boom", {
         el: ".pagination-boom",
         dynamicBullets: true,
         clickable: true,
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     480: {
       /* when window >=0px - webflow mobile landscape/portriat */
@@ -455,21 +455,21 @@ var mySwiper = new Swiper(".swiper-boom", {
         el: ".pagination-boom",
         dynamicBullets: true,
         clickable: true,
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     767: {
       /* when window >= 767px - webflow tablet */ slidesPerView: 2,
       slidesPerGroup: 1,
-      spaceBetween: 28
+      spaceBetween: 28,
     },
     992: {
       /* when window >= 988px - webflow desktop */ slidesPerView: 3,
       slidesPerGroup: 3,
       spaceBetween: 20,
-      loop: false
-    }
-  }
+      loop: false,
+    },
+  },
 });
 
 // swiper JS - Categories Initialize //
@@ -483,7 +483,7 @@ var mySwiper = new Swiper(".swiper3", {
   allowTouchMove: true,
   navigation: {
     nextEl: "#right-button",
-    prevEl: "#left-button"
+    prevEl: "#left-button",
   },
   breakpoints: {
     0: {
@@ -496,12 +496,12 @@ var mySwiper = new Swiper(".swiper3", {
       pagination: {
         el: ".pagination3",
         dynamicBullets: true,
-        clickable: true
+        clickable: true,
       },
       loop: false,
       autoplay: {
-        delay: 2500
-      }
+        delay: 2500,
+      },
     },
     480: {
       /* when window >=0px - webflow mobile landscape/portriat */
@@ -511,12 +511,12 @@ var mySwiper = new Swiper(".swiper3", {
       pagination: {
         el: ".pagination3",
         dynamicBullets: true,
-        clickable: true
+        clickable: true,
       },
       loop: true,
       autoplay: {
-        delay: 2500
-      }
+        delay: 2500,
+      },
     },
     767: {
       /* when window >= 767px - webflow tablet */ slidesPerView: 3,
@@ -525,8 +525,8 @@ var mySwiper = new Swiper(".swiper3", {
       pagination: {
         el: ".pagination3",
         dynamicBullets: true,
-        clickable: true
-      }
+        clickable: true,
+      },
     },
     992: {
       /* when window >= 988px - webflow desktop */ slidesPerView: 3,
@@ -535,11 +535,11 @@ var mySwiper = new Swiper(".swiper3", {
       pagination: {
         el: ".pagination3",
         dynamicBullets: true,
-        clickable: true
+        clickable: true,
       },
-      loop: false
-    }
-  }
+      loop: false,
+    },
+  },
 });
 
 // swiper JS //
@@ -549,7 +549,7 @@ var mySwiper = new Swiper(".swiper4", {
   pagination: {
     el: ".pagination4, .pagination-test",
     dynamicBullets: true,
-    clickable: true
+    clickable: true,
   },
   loop: true,
   slidesPerGroup: 3,
@@ -559,7 +559,7 @@ var mySwiper = new Swiper(".swiper4", {
   allowTouchMove: true,
   navigation: {
     nextEl: "#right-button",
-    prevEl: "#left-button"
+    prevEl: "#left-button",
   },
   breakpoints: {
     0: {
@@ -568,25 +568,25 @@ var mySwiper = new Swiper(".swiper4", {
       slidesPerGroup: 1,
       centeredSlides: true,
       centeredSlidesBounds: true,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     480: {
       /* when window >=0px - webflow mobile landscape/portriat */
       slidesPerView: 2,
       slidesPerGroup: 2,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     767: {
       /* when window >= 767px - webflow tablet */ slidesPerView: 3,
       slidesPerGroup: 1,
-      spaceBetween: 28
+      spaceBetween: 28,
     },
     992: {
       /* when window >= 988px - webflow desktop */ slidesPerView: 3,
       slidesPerGroup: 3,
-      spaceBetween: 20
-    }
-  }
+      spaceBetween: 20,
+    },
+  },
 });
 
 // swiper JS - Other Shroom News Initialize //
@@ -596,7 +596,7 @@ var mySwiper = new Swiper(".swiper-news", {
   pagination: {
     el: ".pagination-news",
     dynamicBullets: true,
-    clickable: true
+    clickable: true,
   },
   loop: false,
   slidesPerGroup: 3,
@@ -606,7 +606,7 @@ var mySwiper = new Swiper(".swiper-news", {
   allowTouchMove: true,
   navigation: {
     nextEl: "#right-button",
-    prevEl: "#left-button"
+    prevEl: "#left-button",
   },
   breakpoints: {
     0: {
@@ -615,25 +615,25 @@ var mySwiper = new Swiper(".swiper-news", {
       slidesPerGroup: 1,
       centeredSlides: true,
       centeredSlidesBounds: true,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     480: {
       /* when window >=0px - webflow mobile landscape/portriat */
       slidesPerView: 2,
       slidesPerGroup: 2,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     767: {
       /* when window >= 767px - webflow tablet */ slidesPerView: 3,
       slidesPerGroup: 1,
-      spaceBetween: 28
+      spaceBetween: 28,
     },
     992: {
       /* when window >= 988px - webflow desktop */ slidesPerView: 4,
       slidesPerGroup: 4,
-      spaceBetween: 20
-    }
-  }
+      spaceBetween: 20,
+    },
+  },
 });
 
 // swiper JS - Product 4 Column Initialize //
@@ -644,7 +644,7 @@ var mySwiper = new Swiper(".swiper5", {
   pagination: {
     el: ".pagination5",
     dynamicBullets: true,
-    clickable: true
+    clickable: true,
   },
   loop: false,
 
@@ -654,7 +654,7 @@ var mySwiper = new Swiper(".swiper5", {
   allowTouchMove: true,
   navigation: {
     nextEl: "#right-button",
-    prevEl: "#left-button"
+    prevEl: "#left-button",
   },
   breakpoints: {
     0: {
@@ -666,27 +666,27 @@ var mySwiper = new Swiper(".swiper5", {
       pagination: {
         el: ".pagination5",
         dynamicBullets: true,
-        clickable: true
+        clickable: true,
       },
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     480: {
       /* when window >=0px - webflow mobile landscape/portriat */
       slidesPerView: 2,
       slidesPerGroup: 2,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     767: {
       /* when window >= 767px - webflow tablet */ slidesPerView: 3,
       slidesPerGroup: 1,
-      spaceBetween: 28
+      spaceBetween: 28,
     },
     992: {
       /* when window >= 988px - webflow desktop */ slidesPerView: 4,
       slidesPerGroup: 4,
-      spaceBetween: 20
-    }
-  }
+      spaceBetween: 20,
+    },
+  },
 });
 
 // swiper JS - Product 2 Column Initialize //
@@ -697,7 +697,7 @@ var mySwiper = new Swiper(".swiper-2col", {
   pagination: {
     el: ".pagination_2col",
     dynamicBullets: true,
-    clickable: true
+    clickable: true,
   },
   loop: false,
 
@@ -707,7 +707,7 @@ var mySwiper = new Swiper(".swiper-2col", {
   allowTouchMove: true,
   navigation: {
     nextEl: "#right-button",
-    prevEl: "#left-button"
+    prevEl: "#left-button",
   },
   breakpoints: {
     0: {
@@ -717,27 +717,27 @@ var mySwiper = new Swiper(".swiper-2col", {
       pagination: {
         el: ".pagination_2col",
         dynamicBullets: true,
-        clickable: true
+        clickable: true,
       },
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     480: {
       /* when window >=0px - webflow mobile landscape/portriat */
       slidesPerView: 1.5,
       slidesPerGroup: 1,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     767: {
       /* when window >= 767px - webflow tablet */ slidesPerView: 3,
       slidesPerGroup: 1,
-      spaceBetween: 28
+      spaceBetween: 28,
     },
     992: {
       /* when window >= 988px - webflow desktop */ slidesPerView: 2,
       slidesPerGroup: 2,
-      spaceBetween: 20
-    }
-  }
+      spaceBetween: 20,
+    },
+  },
 });
 
 // swiper JS - Shop page Module 1 //
@@ -748,7 +748,7 @@ var mySwiper = new Swiper(".shop__module-1", {
   pagination: {
     el: ".module-1-pagination",
     dynamicBullets: true,
-    clickable: true
+    clickable: true,
   },
   loop: false,
 
@@ -758,7 +758,7 @@ var mySwiper = new Swiper(".shop__module-1", {
   allowTouchMove: true,
   navigation: {
     nextEl: "#right-button",
-    prevEl: "#left-button"
+    prevEl: "#left-button",
   },
   breakpoints: {
     0: {
@@ -770,22 +770,22 @@ var mySwiper = new Swiper(".shop__module-1", {
       pagination: {
         el: ".module-1-pagination",
         dynamicBullets: true,
-        clickable: true
+        clickable: true,
       },
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     480: {
       /* when window >=0px - webflow mobile landscape/portriat */
       slidesPerView: 1.5,
       slidesPerGroup: 1,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     767: {
       /* when window >= 767px - webflow tablet */ slidesPerView: 4,
       slidesPerGroup: 4,
-      spaceBetween: 28
-    }
-  }
+      spaceBetween: 28,
+    },
+  },
 });
 
 // swiper JS - Shop page Module 2 //
@@ -796,7 +796,7 @@ var mySwiper = new Swiper(".shop__module-2", {
   pagination: {
     el: ".module-2-pagination",
     dynamicBullets: true,
-    clickable: true
+    clickable: true,
   },
   loop: false,
 
@@ -806,7 +806,7 @@ var mySwiper = new Swiper(".shop__module-2", {
   allowTouchMove: true,
   navigation: {
     nextEl: "#right-button",
-    prevEl: "#left-button"
+    prevEl: "#left-button",
   },
   breakpoints: {
     0: {
@@ -818,22 +818,22 @@ var mySwiper = new Swiper(".shop__module-2", {
       pagination: {
         el: ".module-2-pagination",
         dynamicBullets: true,
-        clickable: true
+        clickable: true,
       },
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     480: {
       /* when window >=0px - webflow mobile landscape/portriat */
       slidesPerView: 1.5,
       slidesPerGroup: 1,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     767: {
       /* when window >= 767px - webflow tablet */ slidesPerView: 4,
       slidesPerGroup: 4,
-      spaceBetween: 28
-    }
-  }
+      spaceBetween: 28,
+    },
+  },
 });
 
 // swiper JS - Shop page Module 3 //
@@ -844,7 +844,7 @@ var mySwiper = new Swiper(".shop__module-3", {
   pagination: {
     el: ".module-3-pagination",
     dynamicBullets: true,
-    clickable: true
+    clickable: true,
   },
   loop: false,
 
@@ -854,7 +854,7 @@ var mySwiper = new Swiper(".shop__module-3", {
   allowTouchMove: true,
   navigation: {
     nextEl: "#right-button",
-    prevEl: "#left-button"
+    prevEl: "#left-button",
   },
   breakpoints: {
     0: {
@@ -866,22 +866,22 @@ var mySwiper = new Swiper(".shop__module-3", {
       pagination: {
         el: ".module-3-pagination",
         dynamicBullets: true,
-        clickable: true
+        clickable: true,
       },
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     480: {
       /* when window >=0px - webflow mobile landscape/portriat */
       slidesPerView: 1.5,
       slidesPerGroup: 1,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     767: {
       /* when window >= 767px - webflow tablet */ slidesPerView: 4,
       slidesPerGroup: 4,
-      spaceBetween: 28
-    }
-  }
+      spaceBetween: 28,
+    },
+  },
 });
 
 // swiper JS - Shop page Module 4 //
@@ -892,7 +892,7 @@ var mySwiper = new Swiper(".shop__module-4", {
   pagination: {
     el: ".module-4-pagination",
     dynamicBullets: true,
-    clickable: true
+    clickable: true,
   },
   loop: false,
 
@@ -902,7 +902,7 @@ var mySwiper = new Swiper(".shop__module-4", {
   allowTouchMove: true,
   navigation: {
     nextEl: "#right-button",
-    prevEl: "#left-button"
+    prevEl: "#left-button",
   },
   breakpoints: {
     0: {
@@ -914,22 +914,22 @@ var mySwiper = new Swiper(".shop__module-4", {
       pagination: {
         el: ".module-4-pagination",
         dynamicBullets: true,
-        clickable: true
+        clickable: true,
       },
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     480: {
       /* when window >=0px - webflow mobile landscape/portriat */
       slidesPerView: 1.5,
       slidesPerGroup: 1,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     767: {
       /* when window >= 767px - webflow tablet */ slidesPerView: 4,
       slidesPerGroup: 4,
-      spaceBetween: 28
-    }
-  }
+      spaceBetween: 28,
+    },
+  },
 });
 
 // swiper JS - Shop page Module 5 //
@@ -940,7 +940,7 @@ var mySwiper = new Swiper(".shop__module-5", {
   pagination: {
     el: ".module-5-pagination",
     dynamicBullets: true,
-    clickable: true
+    clickable: true,
   },
   loop: false,
 
@@ -950,7 +950,7 @@ var mySwiper = new Swiper(".shop__module-5", {
   allowTouchMove: true,
   navigation: {
     nextEl: "#right-button",
-    prevEl: "#left-button"
+    prevEl: "#left-button",
   },
   breakpoints: {
     0: {
@@ -960,22 +960,22 @@ var mySwiper = new Swiper(".shop__module-5", {
       pagination: {
         el: ".module-5-pagination",
         dynamicBullets: true,
-        clickable: true
+        clickable: true,
       },
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     480: {
       /* when window >=0px - webflow mobile landscape/portriat */
       slidesPerView: 1.5,
       slidesPerGroup: 1,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     767: {
       /* when window >= 767px - webflow tablet */ slidesPerView: 4,
       slidesPerGroup: 4,
-      spaceBetween: 28
-    }
-  }
+      spaceBetween: 28,
+    },
+  },
 });
 
 // swiper JS - Shop page Module 5 //
@@ -986,7 +986,7 @@ var mySwiper = new Swiper(".shop__module-6", {
   pagination: {
     el: ".module-6-pagination",
     dynamicBullets: true,
-    clickable: true
+    clickable: true,
   },
   loop: false,
 
@@ -996,7 +996,7 @@ var mySwiper = new Swiper(".shop__module-6", {
   allowTouchMove: true,
   navigation: {
     nextEl: "#right-button",
-    prevEl: "#left-button"
+    prevEl: "#left-button",
   },
   breakpoints: {
     0: {
@@ -1006,22 +1006,22 @@ var mySwiper = new Swiper(".shop__module-6", {
       pagination: {
         el: ".module-6-pagination",
         dynamicBullets: true,
-        clickable: true
+        clickable: true,
       },
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     480: {
       /* when window >=0px - webflow mobile landscape/portriat */
       slidesPerView: 1.5,
       slidesPerGroup: 1,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     767: {
       /* when window >= 767px - webflow tablet */ slidesPerView: 4,
       slidesPerGroup: 4,
-      spaceBetween: 28
-    }
-  }
+      spaceBetween: 28,
+    },
+  },
 });
 
 // swiper JS - Product 4 Column Initialize //
@@ -1032,7 +1032,7 @@ var mySwiper = new Swiper(".swiper6", {
   pagination: {
     el: ".pagination6",
     dynamicBullets: true,
-    clickable: true
+    clickable: true,
   },
   loop: false,
 
@@ -1042,7 +1042,7 @@ var mySwiper = new Swiper(".swiper6", {
   allowTouchMove: true,
   navigation: {
     nextEl: "#right-button",
-    prevEl: "#left-button"
+    prevEl: "#left-button",
   },
   breakpoints: {
     0: {
@@ -1052,27 +1052,27 @@ var mySwiper = new Swiper(".swiper6", {
       pagination: {
         el: ".pagination6",
         dynamicBullets: true,
-        clickable: true
+        clickable: true,
       },
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     480: {
       /* when window >=0px - webflow mobile landscape/portriat */
       slidesPerView: 1.5,
       slidesPerGroup: 1,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     767: {
       /* when window >= 767px - webflow tablet */ slidesPerView: 1.5,
       slidesPerGroup: 1,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     992: {
       /* when window >= 988px - webflow desktop */ slidesPerView: 3,
       slidesPerGroup: 3,
-      spaceBetween: 20
-    }
-  }
+      spaceBetween: 20,
+    },
+  },
 });
 
 // swiper JS - Magic Feature swiper //
@@ -1083,7 +1083,7 @@ var mySwiper = new Swiper(".swiper-magic_feature", {
   pagination: {
     el: ".is-magic-featured",
     dynamicBullets: true,
-    clickable: true
+    clickable: true,
   },
   loop: false,
 
@@ -1093,7 +1093,7 @@ var mySwiper = new Swiper(".swiper-magic_feature", {
   allowTouchMove: true,
   navigation: {
     nextEl: "#right-button",
-    prevEl: "#left-button"
+    prevEl: "#left-button",
   },
   breakpoints: {
     0: {
@@ -1103,20 +1103,20 @@ var mySwiper = new Swiper(".swiper-magic_feature", {
       pagination: {
         el: ".is-magic-featured",
         dynamicBullets: true,
-        clickable: true
+        clickable: true,
       },
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     480: {
       /* when window >=0px - webflow mobile landscape/portriat */
       slidesPerView: 1,
       slidesPerGroup: 1,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     767: {
       /* when window >= 767px - webflow tablet */ slidesPerView: 1,
       slidesPerGroup: 1,
-      spaceBetween: 28
-    }
-  }
+      spaceBetween: 28,
+    },
+  },
 });
